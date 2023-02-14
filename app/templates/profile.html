@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>My Website - About</title>
+</head>
+{% extends 'base.html' %}
+{% block main %}
+<body>
+   <div class="card-container">
+      <div class = "card-main flex-col">
+         <div class="card-top flex-col">
+            <div class="img">
+               <img src="{{url_for('static', filename='propic.jpeg')}}">
+            </div>
+            <div class="card-text">
+               <h2 class="card-name">
+                  Donique Forbes
+               </h2>
+               <span> @Asherthemillionaire
+                  <h3>St.Catherine, Jamaica</h3>
+                  <h3>Joined February, 2023</h3>
+               </span>
+               
+            </div>
+         </div>
+         <div class="card-bottom flex-col">
+            <div class="card-para">Hi, I'm Donique Forbes. A Computer Science Major with Big Dreams and wanderlust. 
+               I love reading and I'm always up for a beach trip. 
+               I am graduating from University this year 2023. </div>
+            <div  class="card-data ">
+               <div class="data-1">
+                  <h2>111</h2>
+                  <span>Posts</span>
+               </div>
+               <div class="data-1">
+                  <h2>777</h2>
+                  <span>Following</span>
+               </div>
+               <div class="data-1">
+                  <h2>8888</h2>
+                  <span>Followers</span>
+               </div>
+            </div>
+             <a href="#" class="btn btn-primary">Follow</a>
+         </div>
+      </div>
+   </div>
+</body>
+{% endblock %}
+
